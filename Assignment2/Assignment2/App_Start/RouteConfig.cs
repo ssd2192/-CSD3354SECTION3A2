@@ -18,6 +18,12 @@ namespace Assignment2
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+               name: "MyCustomRoute",
+               url: "{Demo}/{action}/{id}",
+               defaults: new {action = "Customer", id = UrlParameter.Optional }
+           );
         }
     }
 }
